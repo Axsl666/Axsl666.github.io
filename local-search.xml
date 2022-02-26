@@ -4,26 +4,19 @@
   
   
   <entry>
-    <title>first-step</title>
-    <link href="/2022/02/26/first-step/"/>
-    <url>/2022/02/26/first-step/</url>
+    <title>你好</title>
+    <link href="/2022/02/26/hello/"/>
+    <url>/2022/02/26/hello/</url>
     
-    <content type="html"><![CDATA[<h1 id="hello"><a href="#hello" class="headerlink" title="hello"></a>hello</h1>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>test_my_site</title>
-    <link href="/2022/02/26/test-my-site/"/>
-    <url>/2022/02/26/test-my-site/</url>
-    
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>Axsl的中文站</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>杂谈</tag>
+      
+    </tags>
     
   </entry>
   
