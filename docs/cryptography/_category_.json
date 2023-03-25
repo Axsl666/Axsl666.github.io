@@ -1,8 +1,14 @@
 {
   "label": "Cryptography",
   "position": 4,
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
   "link": {
     "type": "generated-index",
     "description": "密码学"
+  },
+  "customProps": {
+    "description": "This description can be used in the swizzled DocCard"
   }
 }

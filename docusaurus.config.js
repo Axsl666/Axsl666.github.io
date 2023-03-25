@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Jellyfish的博客',
+  title: 'Jellyfish Page',
   tagline: '你好',
   favicon: 'img/favicon.ico',
 
@@ -29,8 +29,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['en','zh-Hans'],
   },
 
   presets: [
@@ -65,7 +65,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Axsl',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -73,9 +73,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'DocSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Doc',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -123,7 +123,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Axsl666',
               },
             ],
           },
