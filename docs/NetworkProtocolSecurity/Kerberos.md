@@ -12,7 +12,7 @@ Single Sign On
 
 ### 源起
 
-The Kerberos model is based in part on Needham and Schroeder's trusted third-party authentication protocol and on modifications   suggested by Denning and Sacco.
+The Kerberos model is based in part on Needham and Schroeder's trusted third-party authentication protocol and on modifications suggested by Denning and Sacco.
 
 - 源自 Needham-Schroeder的一种认证协议
 - 软件 Kerberos V5
@@ -37,11 +37,11 @@ The Kerberos model is based in part on Needham and Schroeder's trusted third-par
 
 ## Kerberos Principal
 
-- Authentication Server (AS) 
+- Authentication Server (AS)
   - 通过 long-term key认证客户
   - AS 给予客户 ticket granting ticket 和 short-term key
   - 认证服务
-- Ticket Granting Server (TGS) 
+- Ticket Granting Server (TGS)
   - 通过 short-term key 和 ticket granting ticket认证客户
   - TGS 发放 tickets 给客户以访问其他的服务器
   - 授权和访问控制服务
@@ -58,4 +58,3 @@ The Kerberos model is based in part on Needham and Schroeder's trusted third-par
 ## 认证过程
 
 完整的认证流程，有客户端与AS, TGS, AP的3次交互，每次交互，响应包都会包含两条信息，一条可以用本地密钥解密，另一条需要转发。
-

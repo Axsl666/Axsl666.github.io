@@ -16,6 +16,7 @@ Paper,
 - 对于所得的结果进行解释
 
 基本术语
+
 ## 谓词
 
 - `believes(P,X)`
@@ -25,12 +26,12 @@ Paper,
 - `controls(P,X)`
   - 权威性
 - `fresh(X)`
-- `<X>y` 
+- `<X>y`
 - $P \ Q$
 - $\{X\}_K$
 
-
 ## message-meaning rule
+
 主要用于消息来源的判断
 
 $$\frac{条件}{结论}$$
@@ -45,22 +46,21 @@ $$\frac{P \ \bold{believes} \ Q \xleftrightarrow{K},\ P \ \bold{sees} \ \{X\}_K}
 
 $$\frac{P \ \bold{believes} \ \bold{fresh}(X),\ P \ \bold{believes} \ Q \ \bold{said} \ X}{P \ \bold{believes} \ Q \ \bold{believes} \ X}$$
 
-
-
 乐观的前提：
+
 1. 相信X是新鲜的。
 2. Q是合法的主体，不会撒谎。
 
-## jurisdiction rule 
-
+## jurisdiction rule
 
 ## 接受规则
-
 
 $$
 \frac{P \ \bold{sees} \ (X,Y)}{}
 $$
+
 签名
+
 $$
 \frac{P \ \bold{sees} \ \langle X \rangle_Y}{}
 $$
@@ -72,6 +72,7 @@ $$
 $$
 \frac{P \ \bold{believes} \ \bold{fresh}(X)}{P \ \bold{believes} \ \bold{fresh}(X,Y)}
 $$
+
 按时间顺序，X是新鲜的，认为与X的结合体(X,Y)是新鲜的，但不能推出fresh(Y)
 
 ## BAN逻辑的假定
@@ -94,6 +95,7 @@ $$
 
 双方都有相信的密钥
 双方都要对对方对于密钥的认可有研判
+
 $$
 \begin{aligned}
 &A \ \bold{believes} \ A \xleftrightarrow{K_{ab}} B \\
@@ -104,20 +106,22 @@ $$
 $$
 
 ## Kerberos 协议分析
+
 $$
-Message1. \\ 
+Message1. \\
 Message2. \\
 Message3. \\
 Message4. \\
 $$
+
 ### 理想化，idealization
 
 初始化、预处理
 
-
 - 忽略掉消息中的明文部分
 
 ### 推理三
+
 $$
 A \ \bold{believes} \ A \xleftrightarrow{K_{ab}} B \\
 B \ \bold{believes} \ A \xleftrightarrow{K_{ab}} B \\
@@ -133,7 +137,7 @@ $$
 
 $$
 \begin{aligned}
-&Message1. A \rightarrow B: A,\{N_a\}_{K_{ab}} \\ 
+&Message1. A \rightarrow B: A,\{N_a\}_{K_{ab}} \\
 &Message2. B \rightarrow A: \{N_a+1,N_b\}_{K_{ab}} \\
 &Message3. A \rightarrow B: \{N_b+1\}_{K_{ab}} \\
 &Message4. B \rightarrow A: \{K'_{ab},N'_b\}_{K_{ab}} \\
@@ -144,7 +148,7 @@ $$
 
 $$
 \begin{aligned}
-&Message1. A \rightarrow B: A,\{N_a\}_{K_{ab}} \\ 
+&Message1. A \rightarrow B: A,\{N_a\}_{K_{ab}} \\
 &Message2. B \rightarrow A: \{N_a+1,N_b\}_{K_{ab}} \\
 &Message3. A \rightarrow B: \{N_b+1\}_{K_{ab}} \\
 &Message4. B \rightarrow A: \{ A \xleftrightarrow{K_{ab}} B,N'_b\}_{K_{ab}} \\
@@ -180,4 +184,3 @@ $$
 - 非标准的理想化协议过程：明文忽略问题
 - 不合理的假设：主体诚实性问题
 - 违规现象：重放攻击
-
